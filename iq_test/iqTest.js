@@ -1,10 +1,13 @@
-function iqTest(numbers) {
-  let str = String(numbers);
+function iqTest(n) {
+  let str = String(n);
   let arr = str.split(" ");
   let e = 0;
   let o = 0;
   let x = 0;
   let y = 0;
+
+  console.log("Beginning tests...");
+  console.log(arr);
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 === 0) {
@@ -15,9 +18,11 @@ function iqTest(numbers) {
       y = i + 1;
     }
     if (o === 1 && e > 1) {
+      console.log(`Solution: ${y}`);
       return y;
     }
     if (e === 1 && o > 1) {
+      console.log(`Solution: ${x}`);
       return x;
     }
   }

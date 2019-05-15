@@ -1,25 +1,24 @@
 function findEvenIndex(arr) {
-  let activeIndex = 0;
-  let arrLength = arr.length;
   let rightSum = 0;
   let leftSum = 0;
 
-  console.log(arr);
-  console.log(`arrLength: ${arrLength}`);
+  console.log(`arr: ${arr}`);
+  console.log(`arr.length: ${arr.length}`);
 
   // Test every index of the array
   for (let i = 0; i < arr.length; i++) {
-    activeIndex = i;
-    console.log(`activeIndex: ${activeIndex}`);
-    for (let j = i + 1; j < arrLength; j++) {
-      console.log(`arr[j]: ${arr[j]}`);
+    rightSum = arr[i];
+    console.log(`${i}: ${arr[i]}`);
+    console.log(`rightSum: ${rightSum}`);
+    for (let j = i + 1; j < arr.length; j++) {
+      console.log(`${j}; ${arr[j]}`);
       rightSum += arr[j];
-      console.log(`rightSum ${rightSum}`);
-      for (let k = i - 1; k < arrLength)
+      console.log(`rightSum: ${rightSum}`);
     }
   }
-  // Find the sum of all the numbers on either side of the index being evaluated in an attempt to find equal sums
+  // Find the ssum of all the numbers on either side of the index being evaluated in an attempt to find equal sums
   // If there is no equal sum, return -1
+  return;
 }
 
 findEvenIndex([1, 2, 3, 4, 3, 2, 1]);

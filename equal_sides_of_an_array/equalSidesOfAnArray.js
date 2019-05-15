@@ -15,6 +15,7 @@ function findEvenIndex(arr) {
       console.log(`arr[j]: ${arr[j]}`);
       rightSum += arr[j];
       console.log(`rightSum ${rightSum}`);
+      for (let k = i - 1; k < arrLength)
     }
   }
   // Find the sum of all the numbers on either side of the index being evaluated in an attempt to find equal sums

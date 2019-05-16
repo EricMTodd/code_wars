@@ -2,7 +2,6 @@ function findEvenIndex(arr) {
   let solution;
 
   console.log(`arr: ${arr}`);
-  console.log(`arr.length: ${arr.length}`);
 
   for (let i = 0; i < arr.length; i++) {
     let rightSum = 0;

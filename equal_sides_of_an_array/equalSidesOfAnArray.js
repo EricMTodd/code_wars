@@ -1,23 +1,23 @@
 function findEvenIndex(arr) {
-  let rightSum = 0;
-  let leftSum = 0;
-
+  let rightSum;
+  let leftSum;
   console.log(`arr: ${arr}`);
   console.log(`arr.length: ${arr.length}`);
 
-  // Test every index of the array
+  // console.log(`arr[2]: ${arr[2]}`);
+  // console.log(`arr[2 + 1]: ${arr[2 + 1]}`); // same as console.log(`arr[2 + 1]: ${arr[2 + 1]}`);
+
   for (let i = 0; i < arr.length; i++) {
-    rightSum = arr[i];
-    console.log(`${i}: ${arr[i]}`);
-    console.log(`rightSum: ${rightSum}`);
+    console.log(`i: ${i}`);
+    if (i >= 1) {
+      for (let k = 0; k < i; k++) {
+        console.log(`k: ${k}`);
+      }
+    }
     for (let j = i + 1; j < arr.length; j++) {
-      console.log(`${j}; ${arr[j]}`);
-      rightSum += arr[j];
-      console.log(`rightSum: ${rightSum}`);
+      console.log(`j: ${j}`);
     }
   }
-  // Find the ssum of all the numbers on either side of the index being evaluated in an attempt to find equal sums
-  // If there is no equal sum, return -1
   return;
 }
 

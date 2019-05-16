@@ -1,13 +1,12 @@
 function findEvenIndex(arr) {
   let solution;
-  let rightSum;
-  let leftSum;
+
   console.log(`arr: ${arr}`);
   console.log(`arr.length: ${arr.length}`);
 
   for (let i = 0; i < arr.length; i++) {
-    rightSum = 0;
-    leftSum = 0;
+    let rightSum = 0;
+    let leftSum = 0;
 
     if (i >= 1) {
       for (let k = 0; k < i; k++) {

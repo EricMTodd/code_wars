@@ -15,3 +15,5 @@ getCount = str => {
 };
 
 getCount("abracadabra");
+getCount("mephistopheles");
+getCount("The quick brown fox jumped over the lazy dog");

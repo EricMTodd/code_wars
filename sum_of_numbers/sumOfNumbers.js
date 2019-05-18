@@ -18,3 +18,5 @@ function GetSum(a, b) {
 }
 
 GetSum(-17, -17);
+GetSum(12, 9);
+GetSum(1, 10);

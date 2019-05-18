@@ -44,7 +44,7 @@ function incrementString(strng) {
 
   newString = alphanum + newInt;
 
-  console.log(`newSting: ${newString}`);
+  console.log(`newString: ${newString}`);
   return newString;
 }
 

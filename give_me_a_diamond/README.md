@@ -2,6 +2,8 @@
 
 https://www.codewars.com/kata/give-me-a-diamond/train/javascript
 
+### Personal note: The underlines below are meant to be asteriks, but vscode keeps changing them on save to underlines.
+
 This kata is to practice simple string output. Jamie is a programmer, and James' girlfriend. She likes diamonds, and wants a diamond string from James. Since James doesn't know how to make this happen, he needs your help.
 
 ### Task:

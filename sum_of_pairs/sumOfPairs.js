@@ -10,8 +10,8 @@ l8 = [5, 9, 13, -3];
 
 // Function
 const sumPairs = (ints, s) => {
-  console.log(`List being tested: ${ints}`);
-  console.log(`Required sum: ${s}`);
+  // console.log(`List being tested: ${ints}`);
+  // console.log(`Required sum: ${s}`);
   let indicies = [];
   let sumSpace;
   let recordSumSpace;
@@ -33,9 +33,10 @@ const sumPairs = (ints, s) => {
     }
   }
   if (recordSumSpace === undefined) {
-    return console.log("No viable sum found.");
+    console.log("No viable sum found.");
+    return;
   } else {
-    console.log("Solution:", indicies);
+    // console.log("Solution:", indicies);
     return indicies;
   }
 };

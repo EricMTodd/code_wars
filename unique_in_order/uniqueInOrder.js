@@ -16,7 +16,13 @@ uniqueInOrder = str => {
       previous = str[i - 1];
       console.log(`previous: ${previous}`);
     }
+    if (current != previous) {
+      arr.push(str[i]);
+      console.log(arr);
+    }
   }
+  console.log(`solution: ${arr}`);
+  return arr;
 };
 
 uniqueInOrder("AAAABBBCCDAABBB");

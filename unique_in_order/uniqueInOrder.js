@@ -7,13 +7,13 @@ uniqueInOrder = str => {
 
   console.log(str);
   for (let i = 0; i < str.length; i++) {
-    current = i;
+    current = str[i];
     console.log(`current: ${current}`);
     if (current === 0) {
-      previous = -1;
+      previous = "";
       console.log(`previous: ${previous}`);
     } else {
-      previous = current -= 1;
+      previous = str[i - 1];
       console.log(`previous: ${previous}`);
     }
   }

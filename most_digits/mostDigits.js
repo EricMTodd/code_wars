@@ -1,14 +1,16 @@
 function findLongest(array) {
   // code here
-  let current = "";
-  let testCase = "";
   console.log(array);
+  let current = "";
+  let solution = "";
+
   for (let i = 0; i < array.length; i++) {
-    current = array[i];
-    testCase = "" + current;
-    console.log(`testCase: ${testCase}`);
-    for (let k = 0; k < testCase.length; k++) {
-      console.log(testCase[k]);
+    current = "" + array[i];
+    console.log(`current.length: ${current.length}`);
+    if (current.length > solution) {
+      solution = current.length;
+      console.log(`solution: ${solution}`);
+      console.log(`${array[solution]}`);
     }
   }
   return;

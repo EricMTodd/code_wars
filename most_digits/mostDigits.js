@@ -7,13 +7,17 @@ function findLongest(array) {
   for (let i = 0; i < array.length; i++) {
     current = "" + array[i];
     console.log(`current.length: ${current.length}`);
-    if (current.length > solution) {
-      solution = current.length;
-      console.log(`solution: ${solution}`);
-      console.log(`${array[solution]}`);
+    console.log(`solution.length: ${solution.length}`);
+    if (current.length > solution.length) {
+      solution = current;
+      console.log(`solution.length: ${solution.length}`);
     }
   }
-  return;
+  console.log(typeof solution);
+  solution = Number(solution);
+  console.log(typeof solution);
+  console.log(`FINAL SOLUTION: ${solution}`);
+  return solution;
 }
 
 findLongest([1, 10, 100]);

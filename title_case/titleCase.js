@@ -3,23 +3,31 @@ function titleCase(title, minorWords) {
   // Evaluate string for spaces, if a character follows a space, capitalize it unless it is an exception.
   console.log(`title: ${title}, minorWords: ${minorWords}`);
   let newString = title.toLowerCase();
-  let firstLetter = "";
   let testCase = "";
-  let finalString = "";
+  let solution = "";
+  if (minorWords === undefined) {
+    minorWords = "";
+  } else {
+    testCase += minorWords.toLowerCase();
+  }
 
-  for (let i = 0; i < newString.length; i++) {
-    console.log(newString[i]);
-    if (newString[i] !== " ") {
-      testCase += newString[i];
-    } else {
-      firstLetter = testCase[0].toUpperCase();
-      console.log(`firstLetter: ${firstLetter}`);
-      console.log(`testCase: ${testCase}`);
-      // Use an if check to see if the letter needs to be capitalized.
-      // Remove the first letter of the testCase and replace it with the capitalized first letter.
-      // Take the new capitalized word and add it to the final string.
+  // Loop through the title and the minor words until there is a variable
+  // Use an if check to see if the letter needs to be capitalized.
+  // Remove the first letter of the testCase and replace it with the capitalized first letter.
+  // Take the new capitalized word and add it to the final string.
+
+  if (solution.length < title.length) {
+    for (let i = 0; i < newString.length; i++) {
+      if (newString[i] !== " ") {
+        solution += newString[i];
+      }
+    }
+    for (let i = 0; i < testCase.length; i++) {
+      if (testCase[i] !== " ") {
+      }
     }
   }
+
   return;
 }
 

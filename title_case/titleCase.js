@@ -9,13 +9,13 @@ function titleCase(title, minorWords) {
     solution = newTitle;
   } else {
     console.log(`IF ROUTE 2`);
-    newTitle = title[0];
+    solution = title[0];
+    solution = solution.toUpperCase();
+    newTitle = title.toLowerCase();
     console.log(`newTitle: ${newTitle}`);
-    solution = newTitle.toUpperCase();
-    // newTitle = title.toLowerCase();
-    // for (let i = 0; i < newTitle.length; i++) {
-    //   solution += newTitle[i];
-    // }
+    for (let i = 1; i < newTitle.length; i++) {
+      solution += newTitle[i];
+    }
   }
 
   console.log(`solution: ${solution}`);

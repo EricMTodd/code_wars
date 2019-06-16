@@ -1,21 +1,29 @@
 function titleCase(title, minorWords) {
   console.log(`title: ${title}, minorWords: ${minorWords}`);
-  let newTitle = "";
-  let solution = "";
 
-  if (title === "" || title === undefined) {
+  let solution = "";
+  let newTitle = title.toLowerCase();
+  let newMinorWords = minorWords.toLowerCase();
+  let titleArray = [];
+  let minorWordsArray = [];
+
+  if (
+    title === "" ||
+    title === undefined ||
+    minorWords === "" ||
+    minorWords === undefined
+  ) {
     console.log(`IF ROUTE 1`);
-    newTitle = undefined;
-    solution = newTitle;
+    solution = undefined;
   } else {
     console.log(`IF ROUTE 2`);
-    solution = title[0];
-    solution = solution.toUpperCase();
-    newTitle = title.toLowerCase();
-    console.log(`newTitle: ${newTitle}`);
-    for (let i = 1; i < newTitle.length; i++) {
-      solution += newTitle[i];
-    }
+    titleArray = newTitle.split(" ");
+    console.log(`titleArray: ${titleArray}`);
+    minorWordsArray = newMinorWords.split(" ");
+    console.log(`minorWordsArray: ${minorWordsArray}`);
+  }
+  for (let i = 0; i < titleArray.length; i++) {
+    console.log(titleArray[i]);
   }
 
   console.log(`solution: ${solution}`);

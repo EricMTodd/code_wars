@@ -25,10 +25,10 @@ function titleCase(title, minorWords) {
     console.log(`minorWordsArray: ${minorWordsArray}`);
   }
   for (let i = 0; i < titleArray.length; i++) {
-    console.log(titleArray[i]);
+    console.log(`titleArray[i]: ${titleArray[i]}`);
   }
   for (let i = 0; i < minorWordsArray.length; i++) {
-    console.log(minorWordsArray[i]);
+    console.log(`minorWordsArray[i]: ${minorWordsArray[i]}`);
   }
 
   console.log(`solution: ${solution}`);

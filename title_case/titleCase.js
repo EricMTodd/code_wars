@@ -19,8 +19,15 @@ function titleCase(title, minorWords) {
     minorWords = minorWords.toLowerCase().split(" ");
     console.log(`minorWords: ${minorWords}`);
     for (let i = 0; i < title.length; i++) {
+      // for (let k = 0; k < minorWords.length; k++) {
+      //   console.log(`minorWords[k]: ${minorWords[k]}`);
+      //   if (title[i] === minorWords[k]) {
+      //     console.log("MATCH");
+      //   }
+      // }
       title[i] = title[i].charAt(0).toUpperCase() + title[i].slice(1);
     }
+    title = title.join(" ");
     solution = title;
   }
   console.log(`solution: ${solution}`);

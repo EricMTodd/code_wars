@@ -25,3 +25,7 @@ titleCase("");
 titleCase("a clash of KINGS", "a an the of");
 titleCase("THE WIND IN THE WILLOWS", "The In");
 titleCase("the quick brown fox");
+titleCase("Spider-Man: Far From Home");
+titleCase("HUMANs bRUTallY attacKeD BY A mUtateD treE", "A By");
+titleCase("mEn GeT ShoT bY a nEw YoRk CiTy gAnG!", "by a ");
+titleCase("eXtREmELy ferOciOus, MerCiLEss, COLd-blooDED cAt FIGHt");

@@ -29,3 +29,4 @@ titleCase("Spider-Man: Far From Home");
 titleCase("HUMANs bRUTallY attacKeD BY A mUtateD treE", "A By");
 titleCase("mEn GeT ShoT bY a nEw YoRk CiTy gAnG!", "by a ");
 titleCase("eXtREmELy ferOciOus, MerCiLEss, COLd-blooDED cAt FIGHt");
+titleCase("rEAl MEn ShOuLD nEveR ToUCh a cAMeRA", "a");

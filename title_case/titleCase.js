@@ -14,7 +14,7 @@ function titleCase(title, minorWords = "") {
     }
   }
 
-  return titleArray.join(" ");
+  return console.log(titleArray.join(" "));
 }
 
 let capitalize = str => {

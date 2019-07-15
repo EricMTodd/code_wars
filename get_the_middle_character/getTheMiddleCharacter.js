@@ -1,6 +1,4 @@
 getMiddle = str => {
-  console.log(str);
-
   let position;
   let length;
 
@@ -14,7 +12,8 @@ getMiddle = str => {
   return str.substring(position, position + length);
 };
 
-getMiddle("test");
-getMiddle("testing");
-getMiddle("middle");
-getMiddle("A");
+console.log(getMiddle("handbanana"));
+console.log(getMiddle("test"));
+console.log(getMiddle("testing"));
+console.log(getMiddle("middle"));
+console.log(getMiddle("A"));

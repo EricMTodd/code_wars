@@ -1,5 +1,9 @@
-findMiddle = str => {
+getMiddle = str => {
   console.log(str);
 };
 
-findMiddle("Hello World!");
+getMiddle("Hello World!");
+getMiddle("test");
+getMiddle("testing");
+getMiddle("middle");
+getMiddle("A");

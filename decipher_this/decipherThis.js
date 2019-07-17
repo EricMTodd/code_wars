@@ -1,5 +1,5 @@
 function decipherThis(str) {
-  //have fun!
+  console.log(String.fromCharCode(65));
   return str;
 }
 

@@ -1,4 +1,13 @@
 function decipherThis(str) {
+  let wordArr = str.split(" ");
+  let testCase = "1234567890";
+  let activeIndex = "";
+  let number = "";
+
+  for (let i = 0; i < wordArr.length; i++) {
+    if (testCase.indexOf())
+  }
+
   return str;
 }
 

@@ -1,13 +1,10 @@
 function decipherThis(str) {
-  let wordArr = str.split(" ");
   let testCase = "1234567890";
-  let activeIndex = "";
-  let number = "";
+  // Isolate numbers and find the length of the number
+  // Change the number to a letter
+  // Slice it back into the string
 
-  for (let i = 0; i < wordArr.length; i++) {
-    if (testCase.indexOf())
-  }
-
+  // Is it better to split the string in this case or not?
   return str;
 }
 

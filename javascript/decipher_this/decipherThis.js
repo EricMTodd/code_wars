@@ -5,6 +5,10 @@ function decipherThis(str) {
   // Slice it back into the string
 
   // Is it better to split the string in this case or not?
+
+  for (let i = 0; i < str.length; i++) {
+    
+  }
   return str;
 }
 

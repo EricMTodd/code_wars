@@ -1,6 +1,11 @@
 def positive_sum(arr):
-    # Your code here
-    return 0
+    solution = 0
+    for i in arr:
+        if i > 0:
+            solution += i
+
+    print(solution)
+    return solution
 
 
 positive_sum([1, 2, 3, 4, 5])

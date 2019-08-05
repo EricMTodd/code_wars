@@ -1,6 +1,6 @@
 def in_array(array1, array2):
     # new code time
-    return
+    return []
 
 
 a1 = ["live", "arp", "strong"]

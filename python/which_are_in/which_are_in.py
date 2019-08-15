@@ -1,26 +1,12 @@
 def in_array(array1, array2):
     solution = []
-
-    # try .sorted() to sort the strings
-
-    for i in array1:
-        substr = i
-        print(substr)
-        for j in array2:
-            print(j)
-
-    # for i in array1:
-    #     substr = i
-    #     print(substr)
-    # for j in array2:
-    # print(j.index(substr))
-    # if j.index(substr) != -1:
-    #     solution.append(i)
-    # break
-    # print(solution.sort())
-
-    # return solution
-    return
+    for a1 in array1:
+        for a2 in array2:
+            if a1 in a2 and not a1 in solution:
+                solution.append(a1)
+    solution.sort()
+    print(solution)
+    return solution
 
 
 a1 = ["live", "arp", "strong"]

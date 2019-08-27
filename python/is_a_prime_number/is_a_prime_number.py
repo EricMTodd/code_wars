@@ -1,5 +1,22 @@
-def is_prime(num):
-    print(num)
+def is_prime(n):
+    if (n <= 1):
+        print(n, "is not a prime number")
+        return False
+    if (n <= 3):
+        print(n, "is a prime number")
+        return True
+    if (n % 2 == 0 or n % 3 == 0):
+        print(n, "is not a prime number")
+        return False
+
+    i = 5
+    while(i * i <= n):
+        if (n % i == 0 or n % (i + 2) == 0):
+            print(n, "is not a prime number")
+            return False
+        i = i + 6
+    print(n, "is a prime number")
+    return True
 
 
 is_prime(0)

@@ -2,13 +2,14 @@
 
 
 def list_squared(m, n):
-    print(f'{m} - {n}')
     solution = []
     n = n + 1
 
     for i in range(m, n):
-        print("starting loop 1")
-        print(i)
+        if i % 2 == 0:
+            print(f'i: {i}')
+            for j in range(m, i + 1):
+                print(f'j: {j}')
 
 
 list_squared(1, 250)  # [[1, 1], [42, 2500], [246, 84100]]

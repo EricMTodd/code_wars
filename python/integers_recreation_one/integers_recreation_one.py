@@ -6,8 +6,8 @@ def list_squared(m, n):
     n = n + 1
 
     for i in range(m, n):
-        print(f'i: {i}')
-        for j in range(1, i):
+        print(f'divisors of {i}:')
+        for j in range(1, i + 1):
             if i % j == 0:
                 print(j)
 

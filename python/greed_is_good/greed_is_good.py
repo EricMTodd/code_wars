@@ -28,30 +28,34 @@ def score(dice):
     sum = 0
 
     for i in range(1, 7):
-        if i == 1 and dice.count(i) == 3:
-            print("1000 points")
-            sum += 1000
-        elif i == 6 and dice.count(i) == 3:
+        if i == 1:
+            if dice.count(i) == 3:
+                print("1000 points")
+                sum += 1000
+            elif dice.count(i) > 3:
+                sum += 1000 + (dice.count(i) - 3) * 100
+            else:
+                sum += dice.count(i) * 100
+        elif i == 6 and dice.count(i) >= 3:
             print("600 points")
             sum += 600
-        elif i == 5 and dice.count(i) == 3:
-            print("500 points")
-            sum += 500
-        elif i == 4 and dice.count(i) == 3:
+        elif i == 5:
+            if dice.count(i) == 3:
+                print("500 points")
+                sum += 500
+            elif dice.count(i) > 3:
+                sum += 500 + (dice.count(i) - 3) * 50
+            else:
+                sum += dice.count(i) * 50
+        elif i == 4 and dice.count(i) >= 3:
             print("400 points")
             sum += 400
-        elif i == 3 and dice.count(i) == 3:
+        elif i == 3 and dice.count(i) >= 3:
             print("300 points")
             sum += 300
-        elif i == 2 and dice.count(i) == 3:
+        elif i == 2 and dice.count(i) >= 3:
             print("200 points")
             sum += 200
-        elif i == 1 and dice.count(i) == 1:
-            print("100 points")
-            sum += 100
-        elif i == 5 and dice.count(i) == 1:
-            print("50 points")
-            sum += 50
         else:
             print("0 points")
 

@@ -11,6 +11,17 @@
 
 def maxSequence(arr):
     print(arr)
+    total_sum = 0
+    sub_total = 0
+
+    if arr == []:
+        print("0")
+        return 0
+
+    for i in arr:
+        total_sum += i
+
+    print(total_sum)
 
 
 maxSequence([])

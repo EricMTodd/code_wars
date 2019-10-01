@@ -11,20 +11,15 @@
 
 def maxSequence(arr):
     print(arr)
-    sum = 0
     max_sum = 0
-
-    if arr == []:
-        print("0")
-        return 0
-
-    for i in arr:
-        print(f'i: {i}')
-        for j in arr:
-            j = arr.index(i) + 1
-            print(f'j: {j}')
-
-    print(sum)
+    for i in range(len(arr)):
+        for j in range(len(arr)+1):
+            if arr[i:j]:
+                cur_sum = sum(arr[i:j])
+                if cur_sum > max_sum:
+                    max_sum = cur_sum
+    print(max_sum)
+    return max_sum
 
 
 maxSequence([])

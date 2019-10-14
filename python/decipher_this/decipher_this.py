@@ -1,5 +1,14 @@
 def decipher_this(string):
-    print(string)
+    numbers = "1234567890"
+    split_string = string.split()
+
+    for x in split_string:
+        print(x)
+        for y in x:
+            print(y)
+            for z in numbers:
+                if y == z:
+                    print("MATCH")
 
 
 decipher_this("65 119esi 111dl 111lw 108dvei 105n 97n 111ka")

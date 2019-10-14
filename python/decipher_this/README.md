@@ -12,7 +12,16 @@ the second and the last letter is switched (e.g. Hello becomes Holle)
 the first letter is replaced by its character code (e.g. H becomes 72)
 Note: there are no special characters used, only letters and spaces
 
-Examples
+### Examples
 
 decipherThis('72olle 103doo 100ya'); // 'Hello good day'
 decipherThis('82yade 115te 103o'); // 'Ready set go'
+
+### function ord() would get the int value of the char. And in case you want to convert back after playing with the number, function chr() does the trick.
+
+> > > ord('a')
+> > > 97
+> > > chr(97)
+> > > 'a'
+> > > chr(ord('a') + 3)
+> > > 'd'

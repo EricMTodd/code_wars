@@ -1,14 +1,20 @@
-def decipher_this(string):
-    numbers = "1234567890"
-    split_string = string.split()
+import re
 
-    for x in split_string:
-        print(x)
-        for y in x:
-            print(y)
-            for z in numbers:
-                if y == z:
-                    print("MATCH")
+
+def decipher_this(string):
+    print(string)
+
+    ints = re.findall(r'\d+', string)
+    print(ints)
+
+    chars = []
+
+    for i in ints:
+        i = int(i)
+        i = chr(i)
+        chars.append(i)
+
+    print(chars)
 
 
 decipher_this("65 119esi 111dl 111lw 108dvei 105n 97n 111ka")

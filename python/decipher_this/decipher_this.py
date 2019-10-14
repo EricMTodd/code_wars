@@ -2,16 +2,21 @@ import re
 
 
 def decipher_this(string):
-    print(string)
+    print(f'string: {string}')
 
     result = ''.join([i for i in string if not i.isdigit()])
     result = result.split(' ')
     print(f'result: {result}')
+
+    new_result = []
+
     for i in result:
         if i != "":
-            i[0], i[-1] = i[-1], i[0]
-            # print(i[0], i[-1])
-    print(f'result: {result}')
+            new_str = i[-1:] + i[1:-1] + i[:1]
+            print(new_str)
+            new_result.append(new_str)
+
+    print(f'new_result: {new_result}')
 
     ints = re.findall(r'\d+', string)
     print(f'ints: {ints}')
@@ -26,10 +31,9 @@ def decipher_this(string):
     print(f'chars: {chars}')
 
     for i in chars:
-        print(f'i: {i}')
         index = chars.index(i)
-        print(f'result[index]: {result[index]}')
-        new_str = i + result[index]
+        print(f'new_result[index]: {new_result[index]}')
+        new_str = i + new_result[index]
         print(f'new_str: {new_str}')
 
 

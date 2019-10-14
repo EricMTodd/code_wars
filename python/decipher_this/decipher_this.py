@@ -4,6 +4,10 @@ import re
 def decipher_this(string):
     print(string)
 
+    result = ''.join([i for i in string if not i.isdigit()])
+    result = result.split(' ')
+    print(result)
+
     ints = re.findall(r'\d+', string)
     print(ints)
 
@@ -15,6 +19,12 @@ def decipher_this(string):
         chars.append(i)
 
     print(chars)
+
+    for i in chars:
+        for j in result:
+            if chars.index(i) == result.index(j):
+                print(
+                    f"MATCH! i: {i}, j: {j}")
 
 
 decipher_this("65 119esi 111dl 111lw 108dvei 105n 97n 111ka")

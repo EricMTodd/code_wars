@@ -30,6 +30,7 @@ def decipher_this(string):
 
     solution = " ".join(deciphered_words)
     print(f'solution: {solution}')
+    print()
     return solution
 
 

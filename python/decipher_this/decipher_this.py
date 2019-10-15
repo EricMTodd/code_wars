@@ -3,24 +3,18 @@ import re
 
 def decipher_this(string):
     print(f'string: {string}')
+    cleaned_string = ''.join([i for i in string if not i.isdigit()])
+    cleaned_string = cleaned_string.split(' ')
+    swapped_list = []
 
-    result = ''.join([i for i in string if not i.isdigit()])
-    result = result.split(' ')
-    print(f'result: {result}')
-
-    new_result = []
-
-    for i in result:
-        if i != "":
+    for i in cleaned_string:
+        if len(i) == 1:
+            swapped_list.append(i)
+        else:
             new_str = i[-1:] + i[1:-1] + i[:1]
-            print(new_str)
-            new_result.append(new_str)
-
-    print(f'new_result: {new_result}')
+            swapped_list.append(new_str)
 
     ints = re.findall(r'\d+', string)
-    print(f'ints: {ints}')
-
     chars = []
 
     for i in ints:
@@ -28,13 +22,15 @@ def decipher_this(string):
         i = chr(i)
         chars.append(i)
 
-    print(f'chars: {chars}')
+    deciphered_words = []
 
-    for i in chars:
-        index = chars.index(i)
-        print(f'new_result[index]: {new_result[index]}')
-        new_str = i + new_result[index]
-        print(f'new_str: {new_str}')
+    for i in range(len(chars)):
+        new_str = chars[i] + swapped_list[i]
+        deciphered_words.append(new_str)
+
+    solution = " ".join(deciphered_words)
+    print(f'solution: {solution}')
+    return solution
 
 
 decipher_this("65 119esi 111dl 111lw 108dvei 105n 97n 111ka")

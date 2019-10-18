@@ -9,10 +9,12 @@ def string_transformer(s):
     for i in s:
         if i in lower_case:
             i = i.upper()
-            print(i)
+            solution += i
         else:
             i = i.lower()
-            print(i)
+            solution += i
+
+    print(solution)
 
 
 string_transformer("Example string")

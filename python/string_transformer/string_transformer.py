@@ -1,6 +1,5 @@
 def string_transformer(s):
     print(s)
-    return
 
 
 string_transformer("Example string")

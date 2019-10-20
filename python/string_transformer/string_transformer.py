@@ -14,7 +14,7 @@ def string_transformer(s):
             i = i.lower()
             solution += i
 
-    solution = solution.split()
+    solution = solution.split(" ")
     solution.reverse()
     solution = " ".join(solution)
     print(solution)

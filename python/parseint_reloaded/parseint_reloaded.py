@@ -1,5 +1,7 @@
 def parse_int(string):
-    print(string)
+    numwords = {
+
+    }
 
 
 parse_int('one')

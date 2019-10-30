@@ -3,7 +3,9 @@ def parse_int(string):
         "digits": ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"],
 
         "tens": ["twenty", "thirty", "fourty", "fifty",
-                 "sixty", "seventy", "eighty", "ninety"]
+                 "sixty", "seventy", "eighty", "ninety"],
+
+        "scales": ["hundred", "thousand", "million", "billion", "trillion"]
 
     }
 
@@ -11,5 +13,5 @@ def parse_int(string):
 
 
 parse_int('one')
-parse_int('twenty')
-parse_int('two hundred forty-six')
+# parse_int('twenty')
+# parse_int('two hundred forty-six')

@@ -1,15 +1,5 @@
 def is_square(x)
-  puts("\n#{x}")
-  root = x ** 0.5
-  if x < 0
-    false
-  elsif x % root == 0
-    puts true
-    true
-  else
-    # puts false
-    false
-  end
+  x >= 0 && Math.sqrt(x) % 1 == 0
 end
 
 is_square(25)
